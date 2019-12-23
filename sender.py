@@ -1,7 +1,9 @@
-# Add your Python code here. E.g.
 from microbit import *
 import radio
 radio.on()
+
+#Set to any channel between 0 and 100
+radio.config(channel=7)
 
 while True:
     x = accelerometer.get_x()
